@@ -9,11 +9,11 @@ public class Biblioteca {
 		listaUsuario.add(user);
 	}
 	
-	void addLivroCatalogo() {
-		
+	void addLivroCatalogo(Livro book) {
+		catalogoLivro.add(book);
 	}
 	
-	void emprestaLivro() {
+	void emprestaLivro(Usuario user, Livro book) {
 		
 	}
 	
