@@ -15,6 +15,16 @@ public class AntesDepois {
 		System.out.println("@After");
 	}
 	
+	@BeforeClass
+	public static void beforeClass() {
+		System.out.println("@BeforeClass");
+	}
+	
+	@AfterClass
+	public static void afterClass() {
+		System.out.println("@AfterClass");
+	}
+	
 	@Test
 	public void test1() {
 		System.out.println("teste1");
