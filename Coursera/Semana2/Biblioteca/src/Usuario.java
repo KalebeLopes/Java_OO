@@ -6,11 +6,16 @@ public class Usuario {
 	ArrayList<Livro> livroEmprestado = new ArrayList<Livro>();
 	
 	void anexalivro(Livro book) {
+		livroEmprestado.add(book);
+	}
+	
+	void desanexalivro(Livro book) {
 		
 	}
 	
-	void desaanexalivro(Livro book) {
-		
+	public void listarLivros() {
+		for (int i = 0; i < livroEmprestado.size(); i++)
+			System.out.println(livroEmprestado.get(i).titulo);
 	}
 
 }
