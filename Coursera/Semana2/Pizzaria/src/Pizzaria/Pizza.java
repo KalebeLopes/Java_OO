@@ -4,24 +4,30 @@ import java.util.HashMap;
 
 public class Pizza {
 	
-	static HashMap<String, Integer> contabiliza = new HashMap<String, Integer>();
-	static int totalIngrediente = 0;
+	public static HashMap<String, Integer> contabiliza = new HashMap<String, Integer>();	// Array list 
+	public static int totalIngrediente = 0;
 	
 	int ingredientePizza = 0;
 	
-	static void contabilizaIngrediente(String ingrediente) {
-		
-		if (contabiliza.get(ingrediente) == null) {
-			contabiliza.put(ingrediente, 1);
-			totalIngrediente++;
-		}
-			
-		else
-			contabiliza.put(ingrediente, (contabiliza.get(ingrediente) + 1));
-		
+	public static void zeraQtdingredientes() {
+		totalIngrediente = 0;
 	}
 	
-	void adicionaIngrediente(String ingrediente){
+	public static void zeraIngredientes() {
+		contabiliza.clear();
+	}
+	
+	public static void contabilizaIngrediente(String ingrediente) {		
+		if (contabiliza.get(ingrediente) == null) 
+			contabiliza.put(ingrediente, 1);
+		
+		else
+			contabiliza.put(ingrediente, (contabiliza.get(ingrediente) + 1));	
+		
+		totalIngrediente += 1;
+	}
+	
+	public void adicionaIngrediente(String ingrediente){
 		
 		ingredientePizza++;
 		
@@ -29,7 +35,7 @@ public class Pizza {
 		
 	}
 	
-	int getPreco(){
+	public int getPreco(){
 		
 		if (ingredientePizza <= 2)
 			return 15;

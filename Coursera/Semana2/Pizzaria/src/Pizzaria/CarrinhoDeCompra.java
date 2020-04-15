@@ -4,7 +4,7 @@ public class CarrinhoDeCompra {
 
 	int total = 0;
 	
-	void addPizza(Pizza p) {
+	public void addPizza(Pizza p) {
 		if (p.ingredientePizza == 0) {
 			System.out.println("Pizza n foi adicionada porque n contem ingredientes");
 			total += 0;
@@ -14,7 +14,7 @@ public class CarrinhoDeCompra {
 		total += p.getPreco();
 	}
 	
-	int getValorCarrinho() {
+	public int getValorCarrinho() {
 		return total;
 	}
 	
