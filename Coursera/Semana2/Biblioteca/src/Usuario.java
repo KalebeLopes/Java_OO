@@ -9,8 +9,14 @@ public class Usuario {
 		livroEmprestado.add(book);
 	}
 	
-	void desanexalivro(Livro book) {
-		
+	int desanexalivro(Livro book) {
+		for(int i = 0; i < livroEmprestado.size(); i++) {
+			if (book.codLivro == livroEmprestado.get(i).codLivro) {
+				livroEmprestado.remove(i);
+				return 1;
+			}		
+		}
+		return 0;
 	}
 	
 	public void listarLivros() {

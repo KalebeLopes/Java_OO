@@ -29,18 +29,40 @@ class Teste {
 //		System.out.println(biblioteca.catalogoLivro.get(1).titulo);
 //	}
 	
+//	@Test
+//	void testaAnexalivroUsuario() {
+//		
+//		Usuario u1 = new Usuario();
+//		Livro l1 = new Livro();
+//		
+//		l1.titulo = "asdas";
+//		u1.anexalivro(l1);
+//		u1.anexalivro(l1);
+//		
+//		u1.listarLivros();
+//		
+//		
+//	}
+	
 	@Test
-	void testaUsuario() {
-		
+	void testeDesanexaLivroUsuario() {
 		Usuario u1 = new Usuario();
 		Livro l1 = new Livro();
+		Livro l2 = new Livro();
+		Livro l3 = new Livro();
 		
-		l1.titulo = "asdas";
-		u1.anexalivro(l1);
-		u1.anexalivro(l1);
+		l1.titulo = "a";
+		l1.codLivro = 1;
+		l2.titulo = "b";
+		l2.codLivro = 2;
+		l3.titulo = "c";
+		l3.codLivro = 3;
 		
+		u1.anexalivro(l1);
+		u1.anexalivro(l2);
 		u1.listarLivros();
-		
+		assertEquals(0, u1.desanexalivro(l3));
+		u1.listarLivros();
 		
 	}
 
