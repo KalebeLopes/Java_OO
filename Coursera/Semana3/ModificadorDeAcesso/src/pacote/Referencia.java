@@ -15,5 +15,12 @@ public class Referencia {
 		modificadorPublic = 2;
 		
 	}
+	
+	public void Objeto() {
+		Referencia r1 = new Referencia();
+		Referencia r2 = new Referencia();
+	
+		r1.
+	}
 
 }
