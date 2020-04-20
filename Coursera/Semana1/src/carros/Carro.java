@@ -1,23 +1,24 @@
+package carros;
 
 public class Carro {
-	int potencia;
+	public int potencia;
 	int velocidade;
 	String nome;
 	
 	
-	void acelerar() {
+	public void acelerar() {
 		velocidade += potencia;
 	}
 	
-	void frear() {
+	public void frear() {
 		velocidade /= 2;
 	}
 	
-	int getVelocidade() {
+	public int getVelocidade() {
 		return velocidade;
 	}
 	
-	void imprimir() {
+	public void imprimir() {
 		System.out.println("O carro "+nome+ " está a velocidade de "+getVelocidade()+" km/h");
 	}
 	
