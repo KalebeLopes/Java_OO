@@ -4,13 +4,13 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TesteCarro {
+public class TesteCarroSoma {
 	
-	Carro c1;
+	CarroDeCorrida c1;
 	
 	@Before
 	public void CriarCarro(){
-		c1 = new Carro(10, 100, "gol");
+		c1 = new CarroSoma(10, 100, "gol");
 	}
 	
 	@Test
