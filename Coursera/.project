@@ -8,4 +8,11 @@
 	</buildSpec>
 	<natures>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>TiposDeProdutos</name>
+			<type>2</type>
+			<location>/home/kalebe/Kalebe/Java_OO/Coursera/Semana3/TiposDeProdutos(Tarefa)</location>
+		</link>
+	</linkedResources>
 </projectDescription>
