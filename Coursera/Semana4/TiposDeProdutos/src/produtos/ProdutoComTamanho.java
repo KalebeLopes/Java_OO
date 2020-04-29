@@ -4,7 +4,7 @@ public class ProdutoComTamanho extends Produto{
 
 	int numeracao;
 	
-	ProdutoComTamanho(String nome, int codigo, float preco, int numerecao){
+	public ProdutoComTamanho(String nome, int codigo, float preco, int numeracao){
 		super(nome, codigo, preco);
 		this.numeracao = numeracao;
 	}

@@ -4,7 +4,7 @@ public class Produto {
 	
 	protected String nome;
 	protected int codigo;
-	protected float preco;
+	public float preco;
 	
 	public Produto(String nome, int codigo, float preco){
 		this.nome = nome;
