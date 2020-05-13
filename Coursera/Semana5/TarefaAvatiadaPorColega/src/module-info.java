@@ -1,0 +1,3 @@
+module Datas {
+	requires junit;
+}
